@@ -1,0 +1,120 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+:root {
+    --grey700: hsl(0, 0%, 20%);
+    --grey800: hsl(0, 0%, 12%);
+    --grey900: hsl(0, 0%, 8%);
+    --white: hsl(0, 0%, 100%);
+    --green: hsl(75, 94%, 57%);
+    --ff: "Inter", serif;
+    --fw400: 400;
+    --fw600: 600;
+    --fw800: 800;
+    --fs: 14px;
+
+}
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    color: var(--white)
+
+
+}
+
+/* topography */
+
+h1 {
+    line-height: 1.1;
+}
+
+
+ul li {
+    list-style: none;
+}
+
+a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+body {
+    font-family: var(--ff);
+    font-weight: var(--fw400);
+    font-size: var(--fs);
+    text-align: center;
+    color: var(--white);
+    background-color: var(--grey900);
+}
+.wrapper  {
+    max-width: 90%;
+    background-color: var(--grey800);
+    margin: 0 auto;
+    /* border: 5px solid yellow; */
+    
+   
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    color: var(--green);
+    margin-inline: auto;
+    border-radius: 50%;
+    margin-bottom: 2em;
+}
+
+
+.user-name {
+    font-weight: var(--fw600);
+    margin-bottom: 1em;
+}
+
+
+.user-location {
+    font-weight: var(--fw600);
+    color: var(--green);
+    margin-bottom: 1em;
+}
+
+.user-description {
+    margin-bottom: 1em;
+}
+
+.list-item {
+    display: block;
+    width: 100%;
+    padding: .7rem;
+    background-color: var(--grey700);
+    border-radius: .3rem;
+    text-align: center;
+}
+
+.list-item:hover {
+    background-color: var(--green);
+}
+
+/* layout styles */
+
+.profile-container {
+    width:25em;
+    padding: 1.75rem;
+    border-radius: .6rem;
+    background-color: var(--grey800);
+
+}
+
+.wrapper {
+   display: flex;
+   flex-direction: column;  justify-content: center;
+   align-items: center;
+    min-height: 100dvh;
+    
+}
+
+.social-links * + * {
+    margin-top: .75rem;
+}
